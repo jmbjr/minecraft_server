@@ -1,4 +1,4 @@
-worlds["Minecraft world"] = "/minecraft-data/world"
+worlds["Boylecraft FTB-mon"] = "/data/world"
 
 def signFilter(poi):
     if poi['id'] == 'Sign':
@@ -11,16 +11,16 @@ custom_night = [Base(),SmoothLighting(strength=0.9,night=True,color=True)]
 custom_night2 = [Base(),EdgeLines(),SmoothLighting(strength=0.9,night=True,color=True)]
 
 renders["Day"] = {
-    "world": "Minecraft world",
-    "title": "Minecraft world",
+    "world": "Boylecraft FTB-mon",
+    "title": "Boylecraft FTB-mon",
     "rendermode": custom_day,
     "dimension": "overworld",
     "markers": [dict(name="All signs", filterFunction=signFilter)]
 }
 
 renders["Night"] = {
-    "world": "Minecraft world",
-    "title": "Minecraft world (night)",
+    "world": "Boylecraft FTB-mon",
+    "title": "Boylecraft FTB-mon (night)",
     "rendermode": custom_night,
     "dimension": "overworld",
     "markers": [dict(name="All signs", filterFunction=signFilter)]
@@ -28,15 +28,15 @@ renders["Night"] = {
 
 
 renders["Nether"] = {
-    "world": "Minecraft world",
-    "title": "Minecraft world (nether)",
+    "world": "Boylecraft FTB-mon",
+    "title": "Boylecraft FTB-mon (nether)",
     "rendermode": "nether",
     "dimension": "nether"
 }
 
 renders["End"] = {
-    "world": "Minecraft world",
-    "title": "Minecraft world (end)",
+    "world": "Boylecraft FTB-mon",
+    "title": "Boylecraft FTB-mon (end)",
     "rendermode": "normal",
     "dimension": "end"
 }
