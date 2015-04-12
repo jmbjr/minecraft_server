@@ -1,5 +1,6 @@
-FROM ubuntu:13.04
+FROM ubuntu:14.04
 
+RUN apt-get update
 RUN apt-get install -y wget
 
 # Install Node.js
@@ -18,6 +19,6 @@ WORKDIR /minecraft-webmap
 
 ADD start.sh /srv/start.sh
 
-EXPOSE 80
+EXPOSE 88
 
 ENTRYPOINT ["/bin/bash","/srv/start.sh"]
